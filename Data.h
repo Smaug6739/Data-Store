@@ -1,8 +1,13 @@
-#pragma once
+#ifndef DATA_H
+#define DATA_H
+
 template<typename K, typename V>
-struct Data
+class Data
 {
+public:
 	K key;
 	V value;
+	Data(K, V);
 };
 
+#endif
