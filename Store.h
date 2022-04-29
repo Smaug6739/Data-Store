@@ -12,11 +12,11 @@ private:
 public:
 	void add(K, V);
 	void remove(K);
-	/*void clear();
-	void each();
+	void clear();
+	/*void each();
 	void filter();
 	void find();*/
-	//void get();
+	V get(K);
 	Store();
 	//Store(Data<K, V>* data[]);
 
