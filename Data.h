@@ -7,7 +7,8 @@ class Data
 public:
 	K key;
 	V value;
+	Data() = default;
 	Data(K, V);
 };
-
+#include "Data.cpp"
 #endif

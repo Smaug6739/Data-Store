@@ -7,16 +7,18 @@
 #include <vector>
 
 template<typename K, typename V>
-Store<K, V> ::Store() {};
+Store<K, V> ::Store() {
+	std::cout << "Constructor 1 called" << std::endl;
+};
 
-//template<typename K, typename V>
-//Store<K, V>::Store(Data<K,V> *data[]) {
-//	std::array::iterator it{ std::begin(data)};
-//	for (it != std::end(data); it++;) {
-//		std::cout << it << std::endl;
-//	}
-//
-//};
+template<typename K, typename V>
+Store<K, V> ::Store(Data<K, V> arr[], size_t size) {
+	std::cout << "Constructor called" << std::endl;
+	for (size_t i = 0; i < size; i++) {
+		this->add(arr[i].key, arr[i].value);
+	}
+};
+
 
 template<typename K, typename V>
 void Store<K, V>::add(K key, V value) {

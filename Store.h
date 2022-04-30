@@ -12,6 +12,7 @@ private:
 	std::unordered_map<K, V> data{};
 public:
 	Store();
+	Store(Data<K, V> arr[], size_t);
 	V get(K);
 	void add(K, V);
 	void remove(K);
